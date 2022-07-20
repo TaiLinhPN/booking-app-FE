@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link} from 'react-router-dom';
 
 export default class SignUp extends Component {
     render() {
@@ -22,23 +23,34 @@ export default class SignUp extends Component {
                                     <div className="col-xl-8 col-lg-9">
                                         <div className="px-50 py-50 md:px-25 md:py-25 bg-white shadow-1 rounded-16">
                                             <h3 className="text-30 lh-13">Sign Up</h3>
-                                            <p className="mt-10">Already have an account? <a href="login.html" className="text-purple-1">Log in</a></p>
+                                            <p className="mt-10">Already have an account? <Link to={'/Login'}  className="button -underline text-white" href="#">Log in</Link></p>
                                             <form className="contact-form respondForm__form row y-gap-20 pt-30" action="#">
                                                 <div className="col-lg-6">
                                                     <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Email address *</label>
-                                                    <input type="text" name="title" placeholder="Name" />
+                                                    <input type="text" name="email" placeholder="Email address" />
                                                 </div>
                                                 <div className="col-lg-6">
                                                     <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Username *</label>
-                                                    <input type="text" name="title" placeholder="Name" />
+                                                    <input type="text" name="username" placeholder="Username" />
+                                                </div>
+                                                <div className="col-lg-6">
+                                                    <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Address *</label>
+                                                    <input type="text" name="address" placeholder="Address" />
+                                                </div>
+                                                <div className="col-lg-6">
+                                                    <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Job</label>
+                                                    <select id="jobs">
+                                                        <option value="teacher">Teacher</option>
+                                                        <option value="student">Student</option>
+                                                    </select>
                                                 </div>
                                                 <div className="col-lg-6">
                                                     <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Password *</label>
-                                                    <input type="text" name="title" placeholder="Name" />
+                                                    <input type="password" name="title" placeholder="Password" />
                                                 </div>
                                                 <div className="col-lg-6">
                                                     <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Confirm Password *</label>
-                                                    <input type="text" name="title" placeholder="Name" />
+                                                    <input type="password" name="title" placeholder="Confirm Password" />
                                                 </div>
                                                 <div className="col-12">
                                                     <button type="submit" name="submit" id="submit" className="button -md -green-1 text-dark-1 fw-500 w-1/1">
