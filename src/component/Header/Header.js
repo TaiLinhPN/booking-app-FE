@@ -11,7 +11,7 @@ export default class Header extends Component {
                                 <div className="header-left">
                                     <div className="header__logo ">
                                         <a data-barba href="index.html">
-                                            <img src="img/general/logo.svg" alt="logo" />
+                                            <img src="img/general/logop.png" alt="logo" />
                                         </a>
                                     </div>
                                     <div className="header__explore text-green-1 ml-60 xl:ml-30 xl:d-none">

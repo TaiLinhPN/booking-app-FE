@@ -1,123 +1,103 @@
-import React from 'react';
+import React from "react";
 
 const Banner = () => {
   return (
     <>
-
       <div className="content-wrapper  js-content-wrapper">
-        <section data-anim-wrap="" className="masthead -type-5 animated">
-          <div className="masthead__bg pr-60 md:pr-0">
-            <img src="img/home-6/hero/bg.png" alt="image" />
+        <section className="masthead -type-1 js-mouse-move-container">
+          <div className="masthead__bg">
+            <img src="img/home-1/hero/bg.png" alt="image" />
           </div>
           <div className="container">
-            <div className="row y-gap-50 items-center justify-between">
-              <div className="col-lg-6">
+            <div
+              data-anim-wrap=""
+              className="row y-gap-30 justify-between items-end"
+            >
+              <div className="col-xl-6 col-lg-6 col-sm-10">
                 <div className="masthead__content">
-                  <h1
-                    data-anim-child="slide-up delay-1"
-                    className="masthead__title is-in-view"
-                  >
-                    More Than <span className="text-purple-1 underline">3.500+</span>
-                    <br className="md:d-none" />
-                    Education Courses
-                    <br className="md:d-none" />
-                    Online Join Us Today
+                  <h1 data-anim-child="slide-up" className="masthead__title">
+                    Learn New Skills Online with Top{" "}
+                    <span className="text-green-1 underline">Educators</span>
                   </h1>
+                  <p
+                    data-anim-child="slide-up delay-1"
+                    className="masthead__text"
+                  >
+                    Build skills with courses, certificates, and degrees online
+                    from
+                    <br />
+                    world-class universities and companies.
+                  </p>
                   <div
                     data-anim-child="slide-up delay-2"
-                    className="row items-center x-gap-30 y-gap-20 pt-30 is-in-view"
+                    className="masthead__buttons row x-gap-10 y-gap-10"
                   >
-                    <div className="col-auto">
+                    <div className="col-12 col-sm-auto">
                       <a
-                        href="courses-list-1.html"
-                        className="button -md -dark-1 -rounded text-white"
+                        data-barba=""
+                        href="signup.html"
+                        className="button -md -purple-1 text-white"
                       >
-                        Get Started
+                        Join For Free
                       </a>
                     </div>
-                    <div className="col-auto">
+                    <div className="col-12 col-sm-auto">
                       <a
-                        href="https://www.youtube.com/watch?v=ANYfx4-jyqY"
-                        className="d-flex items-center js-gallery"
-                        data-gallery="gallery1"
+                        data-barba=""
+                        href="courses-list-1.html"
+                        className="button -md -outline-green-1 text-green-1"
                       >
-                        <div className="d-flex justify-center items-center size-60 rounded-full border-dark-1-lg">
-                          <div className="icon-play text-20 text-dark-1 pl-5" />
-                        </div>
-                        <div className="ml-10">Watch Video</div>
+                        Find Courses
                       </a>
                     </div>
                   </div>
                   <div
                     data-anim-child="slide-up delay-3"
-                    className="row x-gap-20 y-gap-20 items-center pt-60 lg:pt-30 is-in-view"
+                    className="masthead-info row y-gap-15 sm:d-none"
                   >
-                    <div className="col-xl-4">
-                      <div className="d-flex items-center text-dark-1">
-                        <div className="mr-10">
-                          <img src="img/home-6/hero/icons/1.svg" alt="icon" />
-                        </div>
-                        <div className="fw-500 lh-1 pt-3">
-                          Over 12 million students
-                        </div>
+                    <div className="masthead-info__item d-flex items-center text-white">
+                      <div className="masthead-info__icon mr-10">
+                        <img src="img/masthead/icons/1.svg" alt="icon" />
+                      </div>
+                      <div className="masthead-info__title lh-1">
+                        Over 12 million students
                       </div>
                     </div>
-                    <div className="col-xl-4">
-                      <div className="d-flex items-center text-dark-1">
-                        <div className="mr-10">
-                          <img src="img/home-6/hero/icons/2.svg" alt="icon" />
-                        </div>
-                        <div className="fw-500 lh-1 pt-3">
-                          More than 60,000 courses
-                        </div>
+                    <div className="masthead-info__item d-flex items-center text-white">
+                      <div className="masthead-info__icon mr-10">
+                        <img src="img/masthead/icons/2.svg" alt="icon" />
+                      </div>
+                      <div className="masthead-info__title lh-1">
+                        More than 60,000 courses
                       </div>
                     </div>
-                    <div className="col-xl-4">
-                      <div className="d-flex items-center text-dark-1">
-                        <div className="mr-10">
-                          <img src="img/home-6/hero/icons/3.svg" alt="icon" />
-                        </div>
-                        <div className="fw-500 lh-1 pt-3">Learn anything online</div>
+                    <div className="masthead-info__item d-flex items-center text-white">
+                      <div className="masthead-info__icon mr-10">
+                        <img src="img/masthead/icons/3.svg" alt="icon" />
+                      </div>
+                      <div className="masthead-info__title lh-1">
+                        Learn anything online
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6">
-                <div className="composition -type-1 js-mouse-move-container">
-                  <div className="-img-1">
+              <div
+                data-anim-child="slide-up delay-5"
+                className="col-xl-6 col-lg-6"
+              >
+                <div className="masthead-image">
+                  <div className="masthead-image__el1">
                     <img
                       className="js-mouse-move"
                       data-move={40}
-                      src="img/home-6/hero/2.png"
+                      src="img/masthead/1.png"
                       alt="image"
-                      style={{ transform: "translate(-45.7478px, 63.0588px)" }}
                     />
-                  </div>
-                  <div className="-img-2">
-                    <img
-                      className="js-mouse-move"
-                      data-move={40}
-                      src="img/home-6/hero/1.png"
-                      alt="image"
-                      style={{ transform: "translate(-45.7478px, 63.0588px)" }}
-                    />
-                  </div>
-                  <div className="-img-3">
-                    <img
-                      className="js-mouse-move"
-                      data-move={40}
-                      src="img/home-6/hero/3.png"
-                      alt="image"
-                      style={{ transform: "translate(-45.7478px, 63.0588px)" }}
-                    />
-                  </div>
-                  <div
-                    data-move={30}
-                    className="-el-1 md:d-none js-mouse-move"
-                    style={{ transform: "translate(-34.3109px, 47.2941px)" }}
-                  >
-                    <div className="img-el -w-250 px-20 py-20 d-flex items-center bg-white rounded-8">
+                    <div
+                      data-move={30}
+                      className="lg:d-none img-el -w-250 px-20 py-20 d-flex items-center bg-white rounded-8 js-mouse-move"
+                    >
                       <div className="size-50 d-flex justify-center items-center bg-red-2 rounded-full">
                         <img src="img/masthead/1.svg" alt="icon" />
                       </div>
@@ -129,13 +109,54 @@ const Banner = () => {
                       </div>
                     </div>
                   </div>
-                   
-                  <div
-                    data-move={30}
-                    className="-el-3 md:d-none js-mouse-move"
-                    style={{ transform: "translate(-34.3109px, 47.2941px)" }}
-                  >
-                    <div className="img-el px-40 py-20 shadow-4 d-flex items-center bg-white rounded-8">
+                  <div className="masthead-image__el2">
+                    <img
+                      className="js-mouse-move"
+                      data-move={70}
+                      src="img/masthead/2.png"
+                      alt="image"
+                    />
+                    <div
+                      data-move={60}
+                      className="lg:d-none img-el -w-260 px-20 py-20 d-flex items-center bg-white rounded-8 js-mouse-move"
+                    >
+                      <img src="img/masthead/4.png" alt="icon" />
+                      <div className="ml-20">
+                        <div className="text-dark-1 text-16 fw-500 lh-1">
+                          Ali Tufan
+                        </div>
+                        <div className="mt-3">UX/UI Designer</div>
+                        <div className="d-flex x-gap-5 mt-3">
+                          <div>
+                            <div className="icon-star text-yellow-1 text-11" />
+                          </div>
+                          <div>
+                            <div className="icon-star text-yellow-1 text-11" />
+                          </div>
+                          <div>
+                            <div className="icon-star text-yellow-1 text-11" />
+                          </div>
+                          <div>
+                            <div className="icon-star text-yellow-1 text-11" />
+                          </div>
+                          <div>
+                            <div className="icon-star text-yellow-1 text-11" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="masthead-image__el3">
+                    <img
+                      className="js-mouse-move"
+                      data-move={40}
+                      src="img/masthead/3.png"
+                      alt="image"
+                    />
+                    <div
+                      data-move={30}
+                      className="shadow-4 img-el -w-260 px-30 py-20 d-flex items-center bg-white rounded-8 js-mouse-move"
+                    >
                       <div className="img-el__side">
                         <div className="size-50 d-flex justify-center items-center bg-purple-1 rounded-full">
                           <img src="img/masthead/2.svg" alt="icon" />
@@ -153,7 +174,29 @@ const Banner = () => {
               </div>
             </div>
           </div>
+          <svg
+            className="svg-waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shapeRendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g className="svg-waves__parallax">
+              <use xlinkHref="#gentle-wave" x={48} y={0} />
+              <use xlinkHref="#gentle-wave" x={48} y={3} />
+              <use xlinkHref="#gentle-wave" x={48} y={5} />
+              <use xlinkHref="#gentle-wave" x={48} y={7} />
+            </g>
+          </svg>
         </section>
+
         <section className="layout-pt-md layout-pb-md">
           <div data-anim-wrap="" className="container animated">
             <div className="row justify-center text-center">
@@ -161,7 +204,8 @@ const Banner = () => {
                 <div className="sectionTitle ">
                   <h2 className="sectionTitle__title ">BENEFIT</h2>
                   <p className="sectionTitle__text ">
-                  The website provides a quick and easy way of communicating information between teachers and students.
+                    The website provides a quick and easy way of communicating
+                    information between teachers and students.
                   </p>
                 </div>
               </div>
@@ -177,8 +221,8 @@ const Banner = () => {
                       Learn anything
                     </h5>
                     <p className="coursesCard__text text-14 mt-10">
-                      The latest design trends meet hand-crafted templates in Sassio
-                      Collection.
+                      The latest design trends meet hand-crafted templates in
+                      Sassio Collection.
                     </p>
                   </div>
                 </div>
@@ -193,8 +237,8 @@ const Banner = () => {
                       Learn together
                     </h5>
                     <p className="coursesCard__text text-14 mt-10">
-                      The latest design trends meet hand-crafted templates in Sassio
-                      Collection.
+                      The latest design trends meet hand-crafted templates in
+                      Sassio Collection.
                     </p>
                   </div>
                 </div>
@@ -209,8 +253,8 @@ const Banner = () => {
                       Learn with experts
                     </h5>
                     <p className="coursesCard__text text-14 mt-10">
-                      The latest design trends meet hand-crafted templates in Sassio
-                      Collection.
+                      The latest design trends meet hand-crafted templates in
+                      Sassio Collection.
                     </p>
                   </div>
                 </div>
@@ -225,8 +269,8 @@ const Banner = () => {
                       Life Time Access
                     </h5>
                     <p className="coursesCard__text text-14 mt-10">
-                      The latest design trends meet hand-crafted templates in Sassio
-                      Collection.
+                      The latest design trends meet hand-crafted templates in
+                      Sassio Collection.
                     </p>
                   </div>
                 </div>
@@ -235,8 +279,7 @@ const Banner = () => {
           </div>
         </section>
       </div>
-
     </>
-  )
-}
+  );
+};
 export default Banner;
