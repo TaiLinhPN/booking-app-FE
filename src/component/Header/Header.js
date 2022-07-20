@@ -265,7 +265,7 @@ export default class Header extends Component {
                                                 </ul>
                                             </li>
                                             <li className="menu-item-has-children">
-                                                <a data-barba href="#">Events <i className="icon-chevron-right text-13 ml-10" /></a>
+                                            <Link to={'/Profile'}  href="#">Profile </Link>
                                                 <ul className="subnav">
                                                     <li className="menu__backButton js-nav-list-back">
                                                         <a href="#"><i className="icon-chevron-left text-13 mr-10" /> Events</a>

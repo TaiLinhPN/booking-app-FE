@@ -4,6 +4,12 @@
   display: block;
   overflow: hidden;
 }
+.header__logo img{
+  width:45%;
+}
+.footer-header__logo img{
+  width:45%;
+}
 
 .ratio::before {
   display: block;
@@ -5015,6 +5021,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 767px) {
+  .header.-base-sidebar .header__logo img {
+    width: 20%;
+  }
   .header.-base-sidebar .row {
     margin: 0;
   }
@@ -5025,7 +5034,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 575px) {
   .header.-base-sidebar .header__logo img {
-    width: 80%;
+    width: 20%;
   }
 }
 
@@ -5036,6 +5045,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 767px) {
+  .header.-base-sidebar .header__logo img {
+    width: 20%;
+  }
   .dashboard.-home-9 {
     margin-top: 60px;
   }
