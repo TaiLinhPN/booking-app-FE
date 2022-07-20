@@ -1,17 +1,17 @@
 import React, { Component } from "react";
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 export default class Header extends Component {
     render() {
         return (
             <div>
-                <div  className="header -type-1 js-header">
+                <div className="header -type-1 js-header">
                     <div className="header__container">
                         <div className="row justify-between items-center">
                             <div className="col-auto">
                                 <div className="header-left">
                                     <div className="header__logo ">
                                         <a data-barba href="index.html">
-                                            <img src="img/general/logop.png" alt="logo" />
+                                            <img className="logo-img" src="img/general/logop.png" alt="logo" />
                                         </a>
                                     </div>
                                     <div className="header__explore text-green-1 ml-60 xl:ml-30 xl:d-none">
@@ -27,7 +27,7 @@ export default class Header extends Component {
                                                 <div className="explore__subnav rounded-8">
                                                     <a className="text-dark-1" href="courses-single-1.html">Web Design</a>
                                                     <a className="text-dark-1" href="courses-single-2.html">Graphic Design</a>
-                                                    
+
                                                 </div>
                                             </div>
                                             <div className="explore__item">
@@ -37,7 +37,7 @@ export default class Header extends Component {
                                                 <div className="explore__subnav rounded-8">
                                                     <a className="text-dark-1" href="courses-single-1.html">Web Design</a>
                                                     <a className="text-dark-1" href="courses-single-2.html">Graphic Design</a>
-                                                   
+
                                                 </div>
                                             </div>
                                             <div className="explore__item">
@@ -53,7 +53,7 @@ export default class Header extends Component {
                                                 <div className="explore__subnav rounded-8">
                                                     <a className="text-dark-1" href="courses-single-1.html">Web Design</a>
                                                     <a className="text-dark-1" href="courses-single-2.html">Graphic Design</a>
-                                                  
+
                                                 </div>
                                             </div>
                                             <div className="explore__item">
@@ -66,7 +66,7 @@ export default class Header extends Component {
                                                 <div className="explore__subnav rounded-8">
                                                     <a className="text-dark-1" href="courses-single-1.html">Web Design</a>
                                                     <a className="text-dark-1" href="courses-single-2.html">Graphic Design</a>
-                                                   -
+                                                    -
                                                 </div>
                                             </div>
                                             <div className="explore__item">
@@ -76,7 +76,7 @@ export default class Header extends Component {
                                                 <div className="explore__subnav rounded-8">
                                                     <a className="text-dark-1" href="courses-single-1.html">Web Design</a>
                                                     <a className="text-dark-1" href="courses-single-2.html">Graphic Design</a>
-                                                   
+
                                                 </div>
                                             </div>
                                             <div className="explore__item">
@@ -86,8 +86,8 @@ export default class Header extends Component {
                                                 <div className="explore__subnav rounded-8">
                                                     <a className="text-dark-1" href="courses-single-1.html">Web Design</a>
                                                     <a className="text-dark-1" href="courses-single-2.html">Graphic Design</a>
-                                                    
-                                               
+
+
                                                 </div>
                                             </div>
                                             <div className="explore__item">
@@ -103,7 +103,7 @@ export default class Header extends Component {
                                                 <div className="explore__subnav rounded-8">
                                                     <a className="text-dark-1" href="courses-single-1.html">Web Design</a>
                                                     <a className="text-dark-1" href="courses-single-2.html">Graphic Design</a>
-                                                   
+
                                                 </div>
                                             </div>
                                             <div className="explore__item">
@@ -126,9 +126,9 @@ export default class Header extends Component {
                                     <div className="menu js-navList">
                                         <ul className="menu__nav text-white -is-active">
                                             <li className="menu-item-has-children">
-                                            <Link to={'/'} className="nav-link" href="#">Home
- <i className="icon-chevron-right text-13 ml-10" /></Link>
-                                                
+                                                <Link to={'/'} className="nav-link" href="#">Home
+                                                    <i className="icon-chevron-right text-13 ml-10" /></Link>
+
                                                 <ul className="subnav">
                                                     <li className="menu__backButton js-nav-list-back">
                                                         <a href="#"><i className="icon-chevron-left text-13 mr-10" /> Home</a>
@@ -154,7 +154,7 @@ export default class Header extends Component {
                                                                 <ul className="mega__list">
                                                                     <li><a data-barba href="courses-single-1.html">Course Single v1</a></li>
                                                                     <li><a data-barba href="courses-single-2.html">Course Single v2</a></li>
-                                                                  
+
                                                                 </ul>
                                                             </div>
                                                             <div className="col">
@@ -162,7 +162,7 @@ export default class Header extends Component {
                                                                 <ul className="mega__list">
                                                                     <li><a data-barba href="lesson-single-1.html">Lesson Page v1</a></li>
                                                                     <li><a data-barba href="lesson-single-2.html">Lesson Page v2</a></li>
-                                                                   
+
                                                                 </ul>
                                                             </div>
                                                             <div className="col">
@@ -170,8 +170,8 @@ export default class Header extends Component {
                                                                 <ul className="mega__list">
                                                                     <li><a data-barba href="dashboard.html">Dashboard</a></li>
                                                                     <li><a data-barba href="dshb-courses.html">My Courses</a></li>
-                                                                    
-                                                                    
+
+
                                                                 </ul>
                                                             </div>
                                                             <div className="col">
@@ -179,7 +179,7 @@ export default class Header extends Component {
                                                                 <ul className="mega__list">
                                                                     <li><a data-barba href="#">Web Developer</a></li>
                                                                     <li><a data-barba href="#">Mobile Developer</a></li>
-                                                                    
+
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -206,7 +206,7 @@ export default class Header extends Component {
                                                             <li>
                                                                 <a href="courses-list-1.html">Course List v1</a>
                                                             </li>
-                                                           
+
                                                         </ul>
                                                     </li>
                                                     <li className="menu-item-has-children">
@@ -218,7 +218,7 @@ export default class Header extends Component {
                                                             <li>
                                                                 <a href="courses-single-1.html">Course Single v1</a>
                                                             </li>
-                                                          
+
                                                         </ul>
                                                     </li>
                                                     <li className="menu-item-has-children">
@@ -244,7 +244,7 @@ export default class Header extends Component {
                                                             <li>
                                                                 <a href="dshb-courses.html">My Courses</a>
                                                             </li>
-                                                            
+
                                                         </ul>
                                                     </li>
                                                     <li className="menu-item-has-children">
@@ -256,7 +256,7 @@ export default class Header extends Component {
                                                             <li>
                                                                 <a href="#">Web Developer</a>
                                                             </li>
-                                                           
+
                                                             <li>
                                                                 <a href="#">View All Courses</a>
                                                             </li>
@@ -272,7 +272,7 @@ export default class Header extends Component {
                                                     </li>
                                                     <li><a href="event-list-1.html">Event List 1</a></li>
                                                     <li><a href="event-list-2.html">Event List 2</a></li>
-                                               
+
                                                 </ul>
                                             </li>
                                             <li className="menu-item-has-children">
@@ -283,7 +283,7 @@ export default class Header extends Component {
                                                     </li>
                                                     <li><a href="blog-list-1.html">Blog List 1</a></li>
                                                     <li><a href="blog-list-2.html">Blog List 2</a></li>
-                                                 
+
                                                 </ul>
                                             </li>
                                             <li className="menu-item-has-children">
@@ -331,14 +331,17 @@ export default class Header extends Component {
                                                             <li>
                                                                 <a href="shop-cart.html">Shop Cart</a>
                                                             </li>
-                                                           
+
                                                         </ul>
                                                     </li>
-                                                   
+
                                                 </ul>
                                             </li>
                                             <li>
-                                            <Link to={'/ContactUs'} className="nav-link" href="#">ContactUs</Link>
+                                                <Link to={'/calender'} className="nav-link" href="#">Calender</Link>
+                                            </li>
+                                            <li>
+                                                <Link to={'/ContactUs'} className="nav-link" href="#">ContactUs</Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -377,8 +380,8 @@ export default class Header extends Component {
                             <div className="col-auto">
                                 <div className="header-right d-flex items-center">
                                     <div className="header-right__buttons d-flex items-center ml-30 md:d-none">
-                                    <Link to={'/Login'}  className="button -underline text-white" href="#">Log in</Link>
-                                    <Link to={'/SignUp'} className="button -sm -white text-dark-1 ml-30" href="#">Sign up</Link>
+                                        <Link to={'/Login'} className="button -underline text-white" href="#">Log in</Link>
+                                        <Link to={'/SignUp'} className="button -sm -white text-dark-1 ml-30" href="#">Sign up</Link>
                                     </div>
                                 </div>
                             </div>

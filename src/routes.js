@@ -1,11 +1,9 @@
-
-
-
 import React from 'react';
 import Home from './component/Content/Home';
 import Login from './component/Login/Login';
 import SignUp from './component/Signup/Signup';
 import ContactUs from './component/ContactUs';
+import Calender  from './component/calender/Calender';
 const routes = [{
     path : '/',
 	exact : true,
@@ -20,6 +18,11 @@ const routes = [{
     path : '/SignUp',
 	exact : true,
 	main : ({history})=> <SignUp history={history} />
+},
+{
+    path : '/calender',
+	exact : true,
+	main : ({history})=> <Calender history={history} />
 },
 {
     path : '/ContactUs',

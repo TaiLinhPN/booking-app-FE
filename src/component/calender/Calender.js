@@ -3,8 +3,16 @@ import HeaderCalender from "./HeaderCalender"
 import ModelCalender from "./ModelCalender"
 import SitebarCalender from "./SitebarCalender"
 import ViewCalender from "./ViewCalender"
+import CreateCalender from "./CreateCalender"
+
+import { useState } from "react";
+
 
 function Calender() {
+  const [state , setState] = useState(false)
+    const Toggle = () =>{
+        setState(!state)
+    }
   return (
     <div class="preloader-visible" data-barba="wrapper">
       <div class="barba-container" data-barba="container">
@@ -16,6 +24,8 @@ function Calender() {
             <div class="dashboard -home-9 js-dashboard-home-9">
               <SitebarCalender />
               < ViewCalender />
+              <button onClick={Toggle}>Toggle</button>
+            {state && <CreateCalender/>}
             </div>
           </div>
           

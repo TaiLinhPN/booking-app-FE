@@ -10,9 +10,9 @@ function HeaderCalender(){
                         <i class="icon -dark-text-white icon-explore"></i>
                       </button>
                     </div>
-
+   
                     <div class="header__logo ml-30 md:ml-20">
-                      <a data-barba href="index.html">
+                      <a data-barba href="/">
                         <img class="-light-d-none" src="img/general/logo.svg" alt="logo" />
                         <img class="-dark-d-none" src="img/general/logo-dark.svg" alt="logo" />
                       </a>
