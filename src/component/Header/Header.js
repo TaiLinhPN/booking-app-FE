@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import { Link } from "react-router-dom";
 function Links(props) {
     return (
@@ -20,6 +21,7 @@ function Header() {
                   <a data-barba href="index.html">
                     <img className="header__img" src="img/general/logop.png" alt="logo" />
                   </a>
+
                 </div>
               </div>
             </div>
@@ -28,6 +30,7 @@ function Header() {
                 <div className="menu js-navList">
                   <ul className="menu__nav text-white -is-active">
                   <Links name="Home" link="/"/>
+                  <Links name="Booking" link="/calender"/>
                   <Links name="Profile" link="/Profile"/>
                   <Links name="Contactus" link="/ContactUs" />   
                   </ul>                     
