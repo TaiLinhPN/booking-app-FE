@@ -1,11 +1,23 @@
 import React,{ Component} from "react";
 import Menu from "../Menu/Menu";
+// import 'bootstrap/dist/css/bootstrap.min.css'; 
+import '../../../review.css';  
+import { Button,Modal} from 'react-bootstrap';  
 // import '../../../js/extra';
 export default class Review extends Component {
+  constructor(){  
+    super();  
+    this.state={  
+      show:false  
+    }  
+  }  
+  handleModal(){  
+    this.setState({show:!this.state.show})  
+  }  
     render() 
     {
       return(
-        <div>
+<div>
           <div className="dashboard__main">
             <div className="dashboard__content bg-light-4">
               <div className="row pb-50 mb-10">
@@ -32,27 +44,39 @@ export default class Review extends Component {
                                   Ali Tufan
                                   <span className="text-13 text-light-1 fw-400 ml-5">3 Days ago</span>
                                 </h4>
-                                <div className="d-flex x-gap-5 items-center mt-15">
-                                  <i className="icon-star text-9 text-yellow-1" />
-                                  <i className="icon-star text-9 text-yellow-1" />
-                                  <i className="icon-star text-9 text-yellow-1" />
-                                  <i className="icon-star text-9 text-yellow-1" />
-                                  <i className="icon-star text-9 text-yellow-1" />
-                                </div>
+
                               </div>
                               <h5 className="text-15 fw-500 mt-15">The best LMS Design</h5>
                               <div className="comments__text mt-10">
                                 <p>This course is a very applicable. Professor Ng explains precisely each algorithm and even tries to give an intuition for mathematical and statistic concepts behind each algorithm. Thank you very much.</p>
                               </div>
-                              <div className="comments__helpful mt-20">
-                                <button id="myBtn"
-                                      className="button text-13 -sm -light-7 -dark-button-dark-2 text-purple-1">Respond</button>
-                                <div id="myModal" className="modal">
-                                   <div className="modal-content">
-                                     <span className="close">×</span>
-                                         <p>Some text in the Modal..</p>
-                                            </div>
-                                          </div>
+                                <div className="comments__helpful mt-20">
+                              <div>  
+                                <div className="modalClass">  
+                                  <button onClick={()=>this.handleModal()} className="button text-13 -sm -light-7 -dark-button-dark-2 text-purple-1">Respond</button>
+                                </div>  
+          
+        <Modal className="modalbox" show={this.state.show} onHide={()=>this.handleModal()}>  
+          <Modal.Header>
+          <div className="comments__header">
+                                <h4 className="text-17 fw-500 lh-15">
+                                  Ali Tufan
+                                  <span className="text-13 text-light-1 fw-400 ml-5">3 Days ago
+                                  <span class="close" onClick={()=>this.handleModal()}>&times;</span></span>
+{/*  */}
+                                </h4>
+                              </div>
+            </Modal.Header>  
+          <Modal.Body>
+          <h5 className="text-15 fw-500 mt-15">The best LMS Design</h5>
+                              <div className="comments__text mt-10">
+                              <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Comment</label>
+              <br></br><textarea cols={70} rows={5} placeholder="Enter comment..." />
+                              </div>
+                              <button className="button text-13 -sm -light-7 -dark-button-dark-2 text-purple-1" onClick={()=>this.handleModal()}>Send</button>  
+</Modal.Body>  
+        </Modal>  
+      </div>  
                               </div>
                             </div>
                           </div>
@@ -152,7 +176,6 @@ export default class Review extends Component {
             </footer>
           </div>
           
-        </div>
-        
+        </div>        
     )}
 }
