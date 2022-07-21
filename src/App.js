@@ -20,8 +20,8 @@ function App() {
         )
         )}
       </Switch>
-      <Rules/>
       <AboutUs/>
+      <Rules/>
       <Footer />
     
       </BrowserRouter>
