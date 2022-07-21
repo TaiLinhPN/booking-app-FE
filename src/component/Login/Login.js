@@ -1,8 +1,6 @@
-import React, { Component } from "react";
 import { Link} from 'react-router-dom';
-
-export default class Login extends Component {
-    render() {
+export default function Login (){
+     {
         return (
             <div>
                 <div className="content-wrapper  js-content-wrapper">

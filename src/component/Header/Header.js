@@ -1,7 +1,6 @@
-import React, { Component } from "react";
 import { Link} from 'react-router-dom';
-export default class Header extends Component {
-    render() {
+export default function Header () {
+    {
         return (
             <div>
                 <div  className="header -type-1 js-header">
