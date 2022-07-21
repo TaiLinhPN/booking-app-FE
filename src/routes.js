@@ -6,6 +6,8 @@ import Home from './component/Content/Home';
 import Login from './component/Login/Login';
 import SignUp from './component/Signup/Signup';
 import ContactUs from './component/ContactUs';
+import Profile from './component/Profile/Profile';
+
 const routes = [{
     path : '/',
 	exact : true,
@@ -25,6 +27,11 @@ const routes = [{
     path : '/ContactUs',
 	exact : true,
 	main : ({history})=> <ContactUs history={history} />
+},
+{
+	path: '/Profile',
+	exact : true,
+	main : ({history})=> <Profile history={history} />
 }
 ];
 export default routes;

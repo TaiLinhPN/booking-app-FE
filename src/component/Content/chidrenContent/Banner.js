@@ -1,6 +1,6 @@
 import React from "react";
 
-const Banner = () => {
+function Banner() {
   return (
     <>
       <div className="content-wrapper  js-content-wrapper">
@@ -281,5 +281,5 @@ const Banner = () => {
       </div>
     </>
   );
-};
+}
 export default Banner;
