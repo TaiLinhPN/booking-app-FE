@@ -1,5 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+function Links(props) {
+    return (
+      <li>
+        <Link to={props.link} className="nav-link" href="#"> {props.name}</Link>
+      </li>
+    );
+  }
 function Header() {
   return (
     <div>
@@ -12,176 +19,6 @@ function Header() {
                   <a data-barba href="index.html">
                     <img className="header__img" src="img/general/logop.png" alt="logo" />
                   </a>
-                </div>
-                <div className="header__explore text-green-1 ml-60 xl:ml-30 xl:d-none">
-                  <a
-                    href="#"
-                    className="d-flex items-center"
-                    data-el-toggle=".js-explore-toggle"
-                  >
-                    <i className="icon icon-explore mr-15" />
-                    Explore
-                  </a>
-                  <div className="explore-content py-25 rounded-8 bg-white toggle-element js-explore-toggle">
-                    <div className="explore__item">
-                      <a
-                        href="#"
-                        className="d-flex items-center justify-between text-dark-1"
-                      >
-                        Architecture
-                        <div className="icon-chevron-right text-11" />
-                      </a>
-                      <div className="explore__subnav rounded-8">
-                        <a className="text-dark-1" href="courses-single-1.html">
-                          Web Design
-                        </a>
-                        <a className="text-dark-1" href="courses-single-2.html">
-                          Graphic Design
-                        </a>
-                      </div>
-                    </div>
-                    <div className="explore__item">
-                      <a
-                        href="#"
-                        className="d-flex items-center justify-between text-dark-1"
-                      >
-                        Business
-                        <div className="icon-chevron-right text-11" />
-                      </a>
-                      <div className="explore__subnav rounded-8">
-                        <a className="text-dark-1" href="courses-single-1.html">
-                          Web Design
-                        </a>
-                        <a className="text-dark-1" href="courses-single-2.html">
-                          Graphic Design
-                        </a>
-                      </div>
-                    </div>
-                    <div className="explore__item">
-                      <a href="#" className="text-dark-1">
-                        Computer Programming
-                      </a>
-                    </div>
-                    <div className="explore__item">
-                      <a href="#" className="text-dark-1">
-                        Data Analysis
-                      </a>
-                    </div>
-                    <div className="explore__item">
-                      <a
-                        href="#"
-                        className="d-flex items-center justify-between text-dark-1"
-                      >
-                        Design
-                        <div className="icon-chevron-right text-11" />
-                      </a>
-                      <div className="explore__subnav rounded-8">
-                        <a className="text-dark-1" href="courses-single-1.html">
-                          Web Design
-                        </a>
-                        <a className="text-dark-1" href="courses-single-2.html">
-                          Graphic Design
-                        </a>
-                      </div>
-                    </div>
-                    <div className="explore__item">
-                      <a href="courses-single-6.html" className="text-dark-1">
-                        Education
-                      </a>
-                    </div>
-                    <div className="explore__item">
-                      <a
-                        href="#"
-                        className="d-flex items-center justify-between text-dark-1"
-                      >
-                        Electronics
-                        <div className="icon-chevron-right text-11" />
-                      </a>
-                      <div className="explore__subnav rounded-8">
-                        <a className="text-dark-1" href="courses-single-1.html">
-                          Web Design
-                        </a>
-                        <a className="text-dark-1" href="courses-single-2.html">
-                          Graphic Design
-                        </a>
-                        -
-                      </div>
-                    </div>
-                    <div className="explore__item">
-                      <a
-                        href="#"
-                        className="d-flex items-center justify-between text-dark-1"
-                      >
-                        Language
-                        <div className="icon-chevron-right text-11" />
-                      </a>
-                      <div className="explore__subnav rounded-8">
-                        <a className="text-dark-1" href="courses-single-1.html">
-                          Web Design
-                        </a>
-                        <a className="text-dark-1" href="courses-single-2.html">
-                          Graphic Design
-                        </a>
-                      </div>
-                    </div>
-                    <div className="explore__item">
-                      <a
-                        href="#"
-                        className="d-flex items-center justify-between text-dark-1"
-                      >
-                        Marketing
-                        <div className="icon-chevron-right text-11" />
-                      </a>
-                      <div className="explore__subnav rounded-8">
-                        <a className="text-dark-1" href="courses-single-1.html">
-                          Web Design
-                        </a>
-                        <a className="text-dark-1" href="courses-single-2.html">
-                          Graphic Design
-                        </a>
-                      </div>
-                    </div>
-                    <div className="explore__item">
-                      <a href="#" className="text-dark-1">
-                        Music Arts
-                      </a>
-                    </div>
-                    <div className="explore__item">
-                      <a href="#" className="text-dark-1">
-                        Social Science
-                      </a>
-                    </div>
-                    <div className="explore__item">
-                      <a
-                        href="#"
-                        className="d-flex items-center justify-between text-dark-1"
-                      >
-                        Photography &amp; Video
-                        <div className="icon-chevron-right text-11" />
-                      </a>
-                      <div className="explore__subnav rounded-8">
-                        <a className="text-dark-1" href="courses-single-1.html">
-                          Web Design
-                        </a>
-                        <a className="text-dark-1" href="courses-single-2.html">
-                          Graphic Design
-                        </a>
-                      </div>
-                    </div>
-                    <div className="explore__item">
-                      <a href="courses-single-1.html" className="text-dark-1">
-                        IT &amp; Software
-                      </a>
-                    </div>
-                    <div className="explore__item">
-                      <a
-                        href="courses-single-2.html"
-                        className="text-purple-1 underline"
-                      >
-                        View All Courses
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
