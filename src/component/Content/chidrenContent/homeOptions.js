@@ -1,5 +1,15 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+function Links(props) {
+  return (
+    <li>
+      <Link to={props.link} className="nav-link" href="#">
+        {" "}
+        {props.name}
+      </Link>
+    </li>
+  );
+}
 function HomeOption() {
   return (
     <>
@@ -47,15 +57,12 @@ function HomeOption() {
               <br className="lg:d-none" /> differentiator.
             </p>
             <div className="d-flex x-gap-15 y-gap-15 flex-wrap pt-30">
-              <div>
-                <a href="#" className="button -md -dark-1 text-white">
-                  Browse Teacher
-                </a>
+              <div className="button -md -dark-1 text-white">
+                <Links name="Our teachers" link="/Teacher" />
               </div>
-              <div>
-                <a href="#" className="button -md -outline-dark-1 text-dark-1">
-                  Become a Teacher
-                </a>
+              <div className="gap"></div>
+              <div className="button -md -outline-dark-1 text-dark-1">
+                <Links name="Become a Teacher" link="/Signup" />
               </div>
             </div>
           </div>
