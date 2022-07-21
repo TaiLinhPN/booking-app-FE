@@ -4,6 +4,8 @@ import Footer from "./component/Footer/Footer";
 import Header from "./component/Header/Header"
 import routes from "./routes";
 import {Route , Switch , BrowserRouter }from 'react-router-dom';
+import Rules from "./component/ruless/Rules"
+import AboutUs from './component/aboutUs/AboutUs';
 function App() {
   return (
     <>
@@ -18,7 +20,10 @@ function App() {
         )
         )}
       </Switch>
+      <Rules/>
+      <AboutUs/>
       <Footer />
+    
       </BrowserRouter>
       
     </>
