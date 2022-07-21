@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link} from 'react-router-dom';
 
 export default class Login extends Component {
     render() {
@@ -21,11 +22,18 @@ export default class Login extends Component {
                                     <div className="col-xl-6 col-lg-8">
                                         <div className="px-50 py-50 md:px-25 md:py-25 bg-white shadow-1 rounded-16">
                                             <h3 className="text-30 lh-13">Login</h3>
-                                            <p className="mt-10">Don't have an account yet? <a href="signup.html" className="text-purple-1">Sign up for free</a></p>
+                                            <p className="mt-10">Don't have an account yet? <Link to={'/SignUp'} className="button -sm -white text-dark-1 ml-30" href="#">Sign up for free</Link></p>
                                             <form className="contact-form respondForm__form row y-gap-20 pt-30" action="#">
                                                 <div className="col-12">
                                                     <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Username Or Email</label>
-                                                    <input type="text" name="title" placeholder="Name" />
+                                                    <input type="text" name="username" placeholder="Username Or Email" />
+                                                </div>
+                                                <div className="col-12">
+                                                    <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Job</label>
+                                                    <select id="jobs">
+                                                        <option value="teacher">Teacher</option>
+                                                        <option value="student">Student</option>
+                                                    </select>
                                                 </div>
                                                 <div className="col-12">
                                                     <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Password</label>

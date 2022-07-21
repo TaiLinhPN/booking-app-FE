@@ -1,3 +1,12 @@
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+function Links(props) {
+  return (
+    <li>
+      <Link to={props.link} className="nav-link" href="#"> {props.name}</Link>
+    </li>
+  );
+}
 function Footer() {
   return (
     <footer className="footer -type-1 bg-dark-1 -green-links">
@@ -39,12 +48,9 @@ function Footer() {
                 ABOUT
               </div>
               <div className="d-flex y-gap-10 flex-column">
-                <a href="about-1.html">About Us</a>
-                <a href="blog-list-1.html">Learner Stories</a>
-                <a href="instructor-become.html">Careers</a>
-                <a href="blog-list-1.html">Press</a>
-                <a href="#">Leadership</a>
-                <a href="contact-1.html">Contact Us</a>
+                  <Links name="About us" link="/"/>
+                  <Links name="Profile" link="/Profile"/>
+                  <Links name="Contactus" link="/ContactUs" />   
               </div>
             </div>
             <div className="col-xl-4 col-lg-8">
@@ -54,24 +60,13 @@ function Footer() {
               <div className="row justify-between y-gap-20">
                 <div className="col-md-6">
                   <div className="d-flex y-gap-10 flex-column">
-                    <a href="courses-single-1.html">Development</a>
-                    <a href="courses-single-2.html">Business</a>
-                    <a href="courses-single-3.html">Finance &amp; Accounting</a>
-                    <a href="courses-single-4.html">IT &amp; Software</a>
-                    <a href="courses-single-5.html">Office Productivity</a>
-                    <a href="courses-single-6.html">Design</a>
-                    <a href="courses-single-1.html">Marketing</a>
+                  <Links name="Booking" link="/"/>
+                  <Links name="Learning with us" link="/Profile"/>
+                  <Links name="Let's do it" link="/ContactUs" />   
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="d-flex y-gap-10 flex-column">
-                    <a href="courses-single-1.html">Lifiestyle</a>
-                    <a href="courses-single-2.html">Photography &amp; Video</a>
-                    <a href="courses-single-3.html">Health &amp; Fitness</a>
-                    <a href="courses-single-4.html">Music</a>
-                    <a href="courses-single-5.html">UX Design</a>
-                    <a href="courses-single-6.html">Seo</a>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -80,10 +75,9 @@ function Footer() {
                 SUPPORT
               </div>
               <div className="d-flex y-gap-10 flex-column">
-                <a href="terms.html">Documentation</a>
-                <a href="help-center.html">FAQS</a>
-                <a href="dashboard.html">Dashboard</a>
-                <a href="contact-1.html">Contact</a>
+                  <Links name="Documentation" link="/"/>
+                  <Links name="Benifit" link="/"/>
+                  <Links name="Contactus" link="/ContactUs" />   
               </div>
             </div>
             <div className="col-xl-3 col-lg-4 col-md-6">
@@ -106,7 +100,7 @@ function Footer() {
           <div className="row justify-between items-center y-gap-20">
             <div className="col-auto">
               <div className="d-flex items-center h-100 text-white">
-                © 2022 Educrat. All Right Reserved.
+                © 2022 Freesource_Ontop. All Right Reserved.
               </div>
             </div>
             <div className="col-auto">
@@ -115,7 +109,6 @@ function Footer() {
                   <div className="d-flex x-gap-15 text-white">
                     <a href="help-center.html">Help</a>
                     <a href="terms.html">Privacy Policy</a>
-                    <a href="terms.html">Cookie Notice</a>
                     <a href="terms.html">Security</a>
                     <a href="terms.html">Terms of Use</a>
                   </div>
