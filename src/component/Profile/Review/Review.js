@@ -1,7 +1,7 @@
 import React,{ Component} from "react";
 import Menu from "../Menu/Menu";
 // import '../../../js/extra';
-export default class App extends Component {
+export default class Review extends Component {
     render() 
     {
       return(
