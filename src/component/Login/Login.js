@@ -20,6 +20,7 @@ const Login = () => {
 			[name]: value,
 		});
 	};
+    const [user,setUser] = useState({})
 
 	const loginSubmit = (e) => {
 		e.preventDefault();
@@ -31,8 +32,9 @@ const Login = () => {
 		};
 		axios.post(`http://127.0.0.1:8000/api/login`, bodyFormData).then((res) => {
 			if (res.data.status === 200) {
-				console.log("thành công");
-				window.location.assign("/");
+                localStorage.setItem("user", JSON.stringify(res.data.username));
+				setUser(res.data.username);
+                window.location.assign("/");
 			} else {
 				console.log("chay roi", res.data.validation_errors);
 				if (res.data.validation_errors == null) {
@@ -44,6 +46,7 @@ const Login = () => {
 				}
 			}
 		});
+        
 	};
 
 	return (
