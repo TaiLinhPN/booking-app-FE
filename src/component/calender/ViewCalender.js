@@ -22,31 +22,23 @@ function ViewCalender() {
 			getDay,
 			locales,
 		});
-		// const current = new Date();
-		// const date = `${current.getFullYear()}/${
-		//   current.getMonth() + 1
-		// }/${current.getDate()}`;
-		// console.log(date);
-		// const today = `2022/7/18`;
+		const current = new Date();
+		const date = `${current.getFullYear()}/${
+		  current.getMonth() + 1
+		}/${current.getDate()}`;
+		console.log(date);
+		const today = `2022/7/18`;
 		//  cách định dạng ngày tháng đúng trong hàm date
 		// const events = [
-		//   {
-		//     title: "Big Meeting",
-		//     allDay: false,
-		//     start: today,
-		//     end_time: new Date(2022, 6, 20),
-		//   },
-		//   {
-		//     title: "Vacation",
-		//     start: new Date(2022, 6, 7, 3, 15),
-		//     end: new Date(2022, 6, 7, 22, 20),
-		//   },
-		//   {
-		//     title: "Conference",
-		//     start: new Date(2022, 6, 20),
-		//     end: new Date(2022, 6, 23),
-		//   },
+		// 	{
+		// 		title: "Big Meeting",
+		// 		allDay: false,
+		// 		start: new Date("2022-07-11Z"),
+		// 		end_time: new Date("2022-07-12Z"),
+		// 	},
 		// ];
+    const user = JSON.parse(localStorage.getItem("user"));
+    const id = user.id;
 		const [allEvents, setAllEvents] = useState([]);
 		const [newEvent, setNewEvent] = useState({
 			title: "",
@@ -57,8 +49,11 @@ function ViewCalender() {
 			axios
 				.get(`http://127.0.0.1:8000/api/lessons`)
 				.then((res) => {
-					console.log(res.data);
-					setAllEvents(res.data);
+          const  data = res.data.filter((data) => {
+            return data.teacher_id
+          })
+          // console.log(res.data[0].start_time)
+					setAllEvents(data);
 				})
 				.catch((error) => console.log(error));
 		};
@@ -110,7 +105,10 @@ function ViewCalender() {
 								style={{ width: "20%", marginRight: "10px" }}
 								value={newEvent.start}
 								onChange={(e) =>
-									setNewEvent({ ...newEvent, start_time: e.target.value })
+									setNewEvent({
+										...newEvent,
+										start_time: e.target.value,
+									})
 								}
 							/>
 							<input
@@ -120,7 +118,10 @@ function ViewCalender() {
 								style={{ width: "20%", marginRight: "10px" }}
 								value={newEvent.end}
 								onChange={(e) =>
-									setNewEvent({ ...newEvent, end_time: e.target.value })
+									setNewEvent({
+										...newEvent,
+										end_time:e.target.value,
+									})
 								}
 							/>
 							<button stlye={{ marginTop: "10px" }} onClick={handleAddEvent}>
@@ -135,7 +136,7 @@ function ViewCalender() {
 								<div class="breadcrumbs__item">
 									<a href="index.html">Home</a>
 								</div>
-								<div class="breadcrumbs__item">
+								<div class="breadcrumbs__item">`
 									<a href="courses-list-3.html">All courses</a>
 								</div>
 								<div class="breadcrumbs__item">
@@ -161,7 +162,7 @@ function ViewCalender() {
 									<Calendar
 										localizer={localizer}
 										events={allEvents}
-										views={["day", "agenda", "work_week", "month"]}
+										views={[ "agenda", "month"]}
 										selectable={true}
 										startAccessor="start_time"
 										defaultView="month"
@@ -189,9 +190,9 @@ function ViewCalender() {
 							</div>
 						</div>
 					</div>
-				<ViewMonth />
+					<ViewMonth />
+				</div>
 			</div>
-		</div>
 		</div>
 	);
 }
