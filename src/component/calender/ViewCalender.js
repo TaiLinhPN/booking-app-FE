@@ -49,11 +49,12 @@ function ViewCalender() {
 			axios
 				.get(`http://127.0.0.1:8000/api/lessons`)
 				.then((res) => {
-          const  data = res.data.filter((data) => {
-            return data.teacher_id
-          })
+        //   const  data = res.data.filter((data) => {
+        //     return data.teacher_id
+        //   })
           // console.log(res.data[0].start_time)
-					setAllEvents(data);
+		  console.log(res.data)
+					setAllEvents(res.data);
 				})
 				.catch((error) => console.log(error));
 		};
@@ -120,7 +121,7 @@ function ViewCalender() {
 								onChange={(e) =>
 									setNewEvent({
 										...newEvent,
-										end_time:e.target.value,
+										end_time: e.target.value,
 									})
 								}
 							/>
@@ -128,25 +129,6 @@ function ViewCalender() {
 								Add Event
 							</button>
 						</div>
-						{/* //////////////////////////test////////// */}
-
-						{/* <h1 class="text-30 lh-12 fw-700">Calendar</h1>
-						<div class="breadcrumbs mt-10 pt-0 pb-0">
-							<div class="breadcrumbs__content">
-								<div class="breadcrumbs__item">
-									<a href="index.html">Home</a>
-								</div>
-								<div class="breadcrumbs__item">`
-									<a href="courses-list-3.html">All courses</a>
-								</div>
-								<div class="breadcrumbs__item">
-									<a href="courses-single-1.html">User Experience Design</a>
-								</div>
-								<div class="breadcrumbs__item">
-									<a href="courses-single-1.html">User Interface</a>
-								</div>
-							</div>
-						</div> */}
 					</div>
 				</div>
 
@@ -162,14 +144,29 @@ function ViewCalender() {
 									<Calendar
 										localizer={localizer}
 										events={allEvents}
-										views={[ "agenda", "month"]}
+										views={["agenda", "month"]}
 										selectable={true}
 										startAccessor="start_time"
 										defaultView="month"
 										endAccessor="end_time"
-										style={{ height: 500, margin: "50px" }}
+										style={{ height: 1500, margin: "50px" }}
 										// defaultView={Views.DAY}
 										onSelectEvent={handleSelectEvent}
+										eventPropGetter={(allEvents, start, end) => {
+											let newStyle = {
+												backgroundColor: "blue",
+												height: "120px",
+												color: "white"
+											};
+
+											if ((allEvents.teacher_id == id)) {
+												newStyle.backgroundColor = "green";
+											}
+
+											return {
+												style: newStyle,
+											};
+										}}
 									/>
 								</div>
 
