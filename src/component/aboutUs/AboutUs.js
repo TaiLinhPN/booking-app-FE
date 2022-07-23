@@ -2,6 +2,15 @@ import AboutChilde from "./aboutChilde/AboutChilde";
 import AboutChildeChilde from "./aboutChilde/AboutChildeChilde";
 
 function AboutUs() {
+
+
+
+
+
+
+
+
+
   return (
     <div className="preloader-visible" data-barba="wrapper">
       <div className="barba-container" data-barba="container">
