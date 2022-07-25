@@ -39,11 +39,15 @@ function CreateCalender() {
 
                                         <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Online Link/Offline Address*</label>
 
+
                                         <input type="text" placeholder="Link/Address" />
+
+
                                     </div>
 
 
                                     <div className="col-md-6">
+
 
                                         <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Class size*</label>
 
@@ -53,6 +57,7 @@ function CreateCalender() {
 
 
                                     <div className="col-md-6">
+
 
                                         <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Class Level</label>
 
