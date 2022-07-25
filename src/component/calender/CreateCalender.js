@@ -1,6 +1,51 @@
 function CreateCalender() {
     return (
+
         <div className="dashboard__main">
+            {/* ////////////////////////////// */}
+
+            <div>
+                <input
+                    type="text"
+                    name="content"
+                    placeholder="Add Title"
+                    style={{ width: "20%", marginRight: "10px" }}
+                    value={newEvent.title}
+                    onChange={(e) =>
+                        setNewEvent({ ...newEvent, title: e.target.value })
+                    }
+                />
+                <input
+                    type="datetime-local"
+                    placeholder="start day"
+                    name="start"
+                    style={{ width: "20%", marginRight: "10px" }}
+                    value={newEvent.start}
+                    onChange={(e) =>
+                        setNewEvent({
+                            ...newEvent,
+                            start_time: e.target.value,
+                        })
+                    }
+                />
+                <input
+                    type="datetime-local"
+                    name="end"
+                    placeholder="End Date "
+                    style={{ width: "20%", marginRight: "10px" }}
+                    value={newEvent.end}
+                    onChange={(e) =>
+                        setNewEvent({
+                            ...newEvent,
+                            end_time: e.target.value,
+                        })
+                    }
+                />
+                <button stlye={{ marginTop: "10px" }} onClick={handleAddEvent}>
+                    Add Event
+                </button>
+            </div>
+            {/* ////////////////////////////// */}
             <div className="dashboard__content bg-light-4">
                 <div className="row pb-50 mb-10">
                     <div className="col-auto">
@@ -23,7 +68,13 @@ function CreateCalender() {
 
                                         <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Class Title*</label>
 
-                                        <input type="text" placeholder="Learn Figma - UI/UX Design Essential Training" />
+                                        <input type="text"
+                                            name="content"
+                                            placeholder="Learn Figma - UI/UX Design Essential Training"
+                                            value={newEvent.title}
+                                            onChange={(e) =>
+                                                setNewEvent({ ...newEvent, title: e.target.value })
+                                            } />
                                     </div>
 
 
