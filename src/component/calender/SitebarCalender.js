@@ -7,7 +7,7 @@ function text() {
 function SidebarItem(props) {
   return (
     <div onClick={props.function} className="sidebar__item  -dark-bg-dark-2">
-      <div href="dashboard.html" className="d-flex items-center text-17 lh-1 fw-500">
+      <div className="d-flex items-center text-17 lh-1 fw-500">
         <i className={props.icon}></i>
         {props.name}
       </div>
