@@ -9,19 +9,18 @@ import {useState, useEffect} from "react"
 import  EventEmitter  from "../../utils/EventEmitter"
 
 function Calender() {
+  const [state, setState] = useState(true)
+
+  const onNewClick = () =>{
+    setState(!state);
+  }
 
   useEffect(()=>{
-    
-    const onNewClick = (values) =>{
-      setState(values.Boolean)
-    }
-
     const listener = EventEmitter.addListener('changeState',onNewClick)
     return ()=>{
         listener.remove();
     }
-},[])
-const [state, setState] = useState(true)
+  },[state])
 
   
   return (

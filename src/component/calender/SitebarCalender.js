@@ -1,9 +1,5 @@
 import EventEmitter from "../../utils/EventEmitter"
-import { useState, useEffect } from "react"
 
-function text() {
-  console.log("aaaa")
-}
 function SidebarItem(props) {
   return (
     <div onClick={props.function} className="sidebar__item  -dark-bg-dark-2">
@@ -16,19 +12,8 @@ function SidebarItem(props) {
 }
 
 function SitebarCalender() {
-
-  const [state, setState] = useState(false)
-
   const toggleValender = () => {
-    setState(!state)
-    EventEmitter.emit('changeState', {
-      
-      Boolean: state,
-      create_at: new Date(),
-      
-    }
-
-    )
+    EventEmitter.emit('changeState')
   }
   return (
     <div className="dashboard__sidebar scroll-bar-1">
@@ -42,7 +27,7 @@ function SitebarCalender() {
             Dashboard
           </a>
         </div> */}
-        <SidebarItem name="My Courses" icon="text-20 icon-play-button mr-15" function={() => text()} />
+        <SidebarItem name="My Courses" icon="text-20 icon-play-button mr-15" />
         <SidebarItem name="Create Course" icon="text-20 icon-list mr-15" function={() => toggleValender()} />
       </div>
 

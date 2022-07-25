@@ -31,24 +31,17 @@ function CreateCalender() {
 
                                         <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Short Description*</label>
 
-                                        <textarea placeholder="Description" rows="7"></textarea>
+                                        <textarea placeholder="Description" rows="3"></textarea>
                                     </div>
 
 
                                     <div className="col-12">
 
-                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Course Description*</label>
+                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Online/Offline Address*</label>
 
-                                        <textarea placeholder="Description" rows="7"></textarea>
+                                        <textarea placeholder="Description" rows="2"></textarea>
                                     </div>
 
-
-                                    <div className="col-md-6">
-
-                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">What will students learn in your course?*</label>
-
-                                        <textarea placeholder="Description" rows="7"></textarea>
-                                    </div>
 
 
                                     <div className="col-md-6">
