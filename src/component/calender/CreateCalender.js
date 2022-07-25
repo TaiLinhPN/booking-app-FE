@@ -1,5 +1,6 @@
 function CreateCalender() {
     return (
+
         <div className="dashboard__main">
             <div className="dashboard__content bg-light-4">
                 <div className="row pb-50 mb-10">
@@ -21,9 +22,9 @@ function CreateCalender() {
 
                                     <div className="col-12">
 
-                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Course Title*</label>
+                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Class Title*</label>
 
-                                        <input type="text" placeholder="Learn Figma - UI/UX Design Essential Training" />
+                                        <input type="text" placeholder="Learn Figma - UI/UX Design Essential Training"/>
                                     </div>
 
 
@@ -37,24 +38,29 @@ function CreateCalender() {
 
                                     <div className="col-12">
 
-                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Online/Offline Address*</label>
-
-                                        <textarea placeholder="Description" rows="2"></textarea>
-                                    </div>
+                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Online Link/Offline Address*</label>
 
 
+                                        <input type="text" placeholder="Link/Address" />
 
-                                    <div className="col-md-6">
 
-                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Requirements*</label>
-
-                                        <textarea placeholder="Description" rows="7"></textarea>
                                     </div>
 
 
                                     <div className="col-md-6">
 
-                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Course Level*</label>
+
+                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Class size*</label>
+
+                                        <input type="text" placeholder="Select" />
+
+                                    </div>
+
+
+                                    <div className="col-md-6">
+
+
+                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Class Level</label>
 
                                         <input type="text" placeholder="Select" />
                                     </div>
@@ -62,36 +68,20 @@ function CreateCalender() {
 
                                     <div className="col-md-6">
 
-                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Audio Language*</label>
+                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Class Image</label>
 
-                                        <input type="text" placeholder="Select" />
-                                    </div>
-
-
-                                    <div className="col-md-6">
-
-                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Close Caption*</label>
-
-                                        <input type="text" placeholder="Select" />
-                                    </div>
-
-
-                                    <div className="col-md-6">
-
-                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Course Category*</label>
-
-                                        <input type="text" placeholder="Select" />
+                                        <input type="text" placeholder="Import" />
                                     </div>
 
                                 </form>
 
                                 <div className="row y-gap-20 justify-between pt-15">
                                     <div className="col-auto">
-                                        <button className="button -md -outline-purple-1 text-purple-1">Prev</button>
+                                        <button className="button -md -outline-purple-1 text-purple-1">Review</button>
                                     </div>
 
                                     <div className="col-auto">
-                                        <button className="button -md -purple-1 text-white">Next</button>
+                                        <button className="button -md -purple-1 text-white">Create</button>
                                     </div>
                                 </div>
                             </div>
