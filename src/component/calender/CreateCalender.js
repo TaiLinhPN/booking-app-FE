@@ -24,7 +24,7 @@ function CreateCalender() {
 
                                         <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Class Title*</label>
 
-                                        <input type="text" placeholder="Learn Figma - UI/UX Design Essential Training"/>
+                                        <input type="text" placeholder="Learn Figma - UI/UX Design Essential Training" />
                                     </div>
 
 
@@ -44,6 +44,25 @@ function CreateCalender() {
                                         <input type="text" placeholder="Link/Address" />
 
 
+                                    </div>
+
+
+                                    <div className="col-md-6">
+
+
+                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Time Start*</label>
+
+                                        <input type="datetime-local" placeholder="start day" name="start" />
+
+                                    </div>
+
+
+                                    <div className="col-md-6">
+
+
+                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Time End*</label>
+
+                                        <input type="datetime-local" placeholder="End Date" name="end"/>
                                     </div>
 
 
