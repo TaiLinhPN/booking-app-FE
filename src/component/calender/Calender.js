@@ -3,12 +3,26 @@ import HeaderCalender from "./HeaderCalender"
 import ModelCalender from "./ModelCalender"
 import SitebarCalender from "./SitebarCalender"
 import ViewCalender from "./ViewCalender"
+import CreateCalender from "./CreateCalender"
 
-
-
-
+import {useState, useEffect} from "react"
+import  EventEmitter  from "../../utils/EventEmitter"
 
 function Calender() {
+
+  useEffect(()=>{
+    
+    const onNewClick = (values) =>{
+      setState(values.Boolean)
+    }
+
+    const listener = EventEmitter.addListener('changeState',onNewClick)
+    return ()=>{
+        listener.remove();
+    }
+},[])
+const [state, setState] = useState(true)
+
   
   return (
     <div class="preloader-visible" data-barba="wrapper">
@@ -20,7 +34,8 @@ function Calender() {
           <div class="content-wrapper js-content-wrapper">
             <div class="dashboard -home-9 js-dashboard-home-9">
               <SitebarCalender />
-              < ViewCalender />
+              {state && < ViewCalender />}
+              {!state && < CreateCalender />}
               
             </div>
           </div>
