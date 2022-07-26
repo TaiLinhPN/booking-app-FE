@@ -1,5 +1,4 @@
 import Review from '../component/Profile/Review/Review';
-import Setting from '../component/Profile/Setting/Setting';
 import Course from '../component/Profile/Course/Course';
 import CurrentProfile from '../component/Profile/Account/CurrentProfile';
 import ForgetPassword from '../component/Profile/ForgetPassword/ForgetPassword';
