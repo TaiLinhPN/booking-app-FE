@@ -1,7 +1,15 @@
+import ModelCalender from "./ModelCalender"
+
+import {useState, useEffect} from "react"
+
+
 function CreateCalender() {
+  const [state, setState] = useState(true)
+    
     return (
 
         <div className="dashboard__main">
+            {state && <ModelCalender/>}
             <div className="dashboard__content bg-light-4">
                 <div className="row pb-50 mb-10">
                     <div className="col-auto">
