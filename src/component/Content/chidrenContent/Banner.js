@@ -16,7 +16,7 @@ function Banner() {
               <div className="col-xl-6 col-lg-6 col-sm-10">
                 <div className="masthead__content">
                   <h1 data-anim-child="slide-up" className="masthead__title">
-                    Learn New Skills Online with Freesource{" "}
+                    Learn New Skills with Freesource{" "}
                     <span className="text-green-1 underline">On Top</span>
                   </h1>
                   <p
