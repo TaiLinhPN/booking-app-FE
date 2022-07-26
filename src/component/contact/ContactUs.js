@@ -4,17 +4,17 @@ function ContactUs() {
   return (
     <div>
       <Header />
-      <div className="content-wrapper  js-content-wrapper">
+      <div className="content-wrapper">
         <div className="page-header -type-4 bg-beige-1">
           <div className="container">
             <div className="page-header__content">
               <div className="row">
                 <div className="col-auto">
-                  <div className="slide-up delay-1">
+                  <div className="">
                     <h1 className="page-header__title">Contact Us</h1>
                   </div>
 
-                  <div className="slide-up delay-2">
+                  <div className="">
                     <p className="page-header__text">We’re on a mission to connect you to the best classes<br />
 
                       at no cost.</p>

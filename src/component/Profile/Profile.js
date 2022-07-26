@@ -5,6 +5,7 @@ import Menu from './Menu/Menu';
 import Course from './Course/Course';
 import routes_2 from '../../Routes/routes_2';
 import {Route , Switch , BrowserRouter }from 'react-router-dom';
+import Header from '../Header/Header';
 
 
 // import Content2 from './Content/EditProfile';
@@ -18,6 +19,7 @@ export default function Profile(){
   return (
     <>
       {/* <ContactUs /> */}
+      <Header/>
       <BrowserRouter>
       <Menu></Menu>
     
