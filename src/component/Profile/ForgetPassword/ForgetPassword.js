@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-export default class ForgetPassword extends Component {
-  render() {
+export default function ForgetPassword() {
     return (
       <div className="dashboard__main">
         <div className="dashboard__content bg-light-4">
@@ -43,4 +42,3 @@ export default class ForgetPassword extends Component {
 
     )
   }
-}

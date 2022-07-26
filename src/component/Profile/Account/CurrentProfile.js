@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-export default class CurrentProfile extends Component {
-  render() {
+export default function CurrentProfile() {
+
     return (
 
       <div className="dashboard__main">
@@ -77,4 +77,3 @@ export default class CurrentProfile extends Component {
       </div>
     )
   }
-}

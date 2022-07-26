@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 // import Header from './Header';
 import Course from '../Course/Course';
 import { Link } from 'react-router-dom';
-export default class Menu extends Component {
-  render() {
+export default function Menu() {
     return (
       <div className="content-wrapper js-content-wrapper">
         <div className="dashboard -home-9 js-dashboard-home-9">
@@ -54,4 +53,3 @@ export default class Menu extends Component {
 
     )
   }
-}
