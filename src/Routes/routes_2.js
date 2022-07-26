@@ -1,9 +1,9 @@
-import Review from '../Profile/Review/Review';
-import Setting from '../Profile/Setting/Setting';
-import Course from '../Profile/Course/Course';
-import CurrentProfile from '../Profile/Account/CurrentProfile';
-import ForgetPassword from '../Profile/ForgetPassword/ForgetPassword';
-import EditProfile from '../Profile/Account/EditProfile';
+import Review from '../component/Profile/Review/Review';
+import Setting from '../component/Profile/Setting/Setting';
+import Course from '../component/Profile/Course/Course';
+import CurrentProfile from '../component/Profile/Account/CurrentProfile';
+import ForgetPassword from '../component/Profile/ForgetPassword/ForgetPassword';
+import EditProfile from '../component/Profile/Account/EditProfile';
 const routes_2 =[
     {
         path : '/Course',
