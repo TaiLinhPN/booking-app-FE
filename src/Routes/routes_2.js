@@ -15,12 +15,7 @@ const routes_2 =[
 	exact : true,
 	main : ({history})=> <Review history={history} />
 }
-,
-{
-    path : '/Setting',
-	exact : true,
-	main : ({history})=> <Setting history={history} />
-},{
+,{
     path: '/CurrentProfile',
     exact: true,
     main: ({history})=> <CurrentProfile history={history} />
