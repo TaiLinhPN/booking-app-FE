@@ -45,6 +45,24 @@ function CreateCalender() {
 
                                     </div>
 
+                                    <div className="col-md-6">
+
+                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Time Start<span>*</span></label>
+
+                                        <input type="datetime-local" placeholder="start day" name="start"  />
+
+                                    </div>
+
+                                    <div className="col-md-6">
+
+                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">End<span>*</span></label>
+
+                                        <input type="datetime-local" placeholder="End day" name="end"  />
+
+                                    </div>
+
+
+                                   
 
                                     <div className="col-md-6">
 
