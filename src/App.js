@@ -11,7 +11,7 @@ function App() {
     <>
       {/* <ContactUs /> */}
       <BrowserRouter>
-      <Header></Header>
+      {/* <Header></Header> */}
     
       <Switch>
         
@@ -20,9 +20,7 @@ function App() {
         )
         )}
       </Switch>
-      <AboutUs/>
-      <Rules/>
-      <Footer />
+     
     
       </BrowserRouter>
       

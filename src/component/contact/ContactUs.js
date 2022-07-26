@@ -1,7 +1,10 @@
+import Header from "../Header/Header";
+
 function ContactUs() {
   return (
-    <div className="content-wrapper  js-content-wrapper">
-
+    <div>
+      <Header />
+      <div className="content-wrapper  js-content-wrapper">
         <div className="page-header -type-4 bg-beige-1">
           <div className="container">
             <div className="page-header__content">
@@ -12,9 +15,9 @@ function ContactUs() {
                   </div>
 
                   <div className="slide-up delay-2">
-                    <p className="page-header__text">We’re on a mission to connect you to the best classes<br/> 
-                    
-                    at no cost.</p>
+                    <p className="page-header__text">We’re on a mission to connect you to the best classes<br />
+
+                      at no cost.</p>
                   </div>
                 </div>
               </div>
@@ -66,11 +69,11 @@ function ContactUs() {
                   <form className="contact-form row y-gap-30 pt-60 lg:pt-40" action="#">
                     <div className="col-12">
                       <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Name</label>
-                      <input type="text" name="title" placeholder="Name..."/>
+                      <input type="text" name="title" placeholder="Name..." />
                     </div>
                     <div className="col-12">
                       <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Email Address</label>
-                      <input type="text" name="title" placeholder="Email..."/>
+                      <input type="text" name="title" placeholder="Email..." />
                     </div>
                     <div className="col-12">
                       <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Message...</label>
@@ -87,10 +90,8 @@ function ContactUs() {
             </div>
           </div>
         </div>
-
-
       </div>
-    
+    </div>
   );
 }
 export default ContactUs;
