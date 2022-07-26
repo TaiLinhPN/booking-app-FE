@@ -22,7 +22,7 @@ function CreateCalender() {
 
                                     <div className="col-12">
 
-                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Class Title*</label>
+                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Class Title<span>*</span></label>
 
                                         <input type="text" placeholder="Learn Figma - UI/UX Design Essential Training"/>
                                     </div>
@@ -30,7 +30,7 @@ function CreateCalender() {
 
                                     <div className="col-12">
 
-                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Short Description*</label>
+                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Short Description<span>*</span></label>
 
                                         <textarea placeholder="Description" rows="3"></textarea>
                                     </div>
@@ -38,7 +38,7 @@ function CreateCalender() {
 
                                     <div className="col-12">
 
-                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Online Link/Offline Address*</label>
+                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Online Link/Offline Address<span>*</span></label>
 
 
                                         <input type="text" placeholder="Link/Address" />
@@ -50,7 +50,7 @@ function CreateCalender() {
                                     <div className="col-md-6">
 
 
-                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Class size*</label>
+                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Class size<span>*</span></label>
 
                                         <input type="text" placeholder="Select" />
 

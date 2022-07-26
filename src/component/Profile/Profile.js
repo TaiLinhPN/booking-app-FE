@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Menu from './Menu/Menu';
 
 import Course from './Course/Course';
-import routes_2 from "../Routes/routes_2";
+import routes_2 from '../../Routes/routes_2';
 import {Route , Switch , BrowserRouter }from 'react-router-dom';
 
 

@@ -13,8 +13,7 @@ function HeaderCalender(){
    
                     <div className="header__logo ml-30 md:ml-20">
                       <a data-barba href="/">
-                        <img className="-light-d-none" src="img/general/logo.svg" alt="logo" />
-                        <img className="-dark-d-none" src="img/general/logo-dark.svg" alt="logo" />
+                        <img className="logo-calender" src="img/general/logop.png" alt="logo" />
                       </a>
                     </div>
                   </div>
@@ -29,7 +28,6 @@ function HeaderCalender(){
                         </div>
                         <div className="dropdown__item -dark-bg-dark-2 -dark-border-white-10">
                           <div className="text-14 y-gap-15">
-                            <div><a href="dashboard.html" className="d-block text-dark-1">Dashboard</a></div>
                             <div><a href="dshb-courses.html" className="d-block text-dark-1">My Courses</a></div>
                             <div><a href="dshb-bookmarks.html" className="d-block text-dark-1">Bookmarks</a></div>
                             <div><a href="dshb-listing.html" className="d-block text-dark-1">Add Listing</a></div>
@@ -90,93 +88,9 @@ function HeaderCalender(){
                       </div>
 
                       <div className="relative">
-                        <button data-maximize className="d-flex text-light-1 items-center justify-center size-50 rounded-16 -hover-dshb-header-light">
+                        <button data-maximize="true" className="d-flex text-light-1 items-center justify-center size-50 rounded-16 -hover-dshb-header-light">
                           <i className="text-24 icon icon-maximize"></i>
                         </button>
-                      </div>
-
-
-                      <div className="relative ">
-                        <button className="d-flex items-center text-light-1 d-flex items-center justify-center size-50 rounded-16 -hover-dshb-header-light" data-el-toggle=".js-cart-toggle">
-                          <i className="text-20 icon icon-basket"></i>
-                        </button>
-
-                        <div className="toggle-element js-cart-toggle">
-                          <div className="header-cart bg-white -dark-bg-dark-1 rounded-8">
-                            <div className="px-30 pt-30 pb-10">
-
-                              <div className="row justify-between x-gap-40 pb-20">
-                                <div className="col">
-                                  <div className="row x-gap-10 y-gap-10">
-                                    <div className="col-auto">
-                                      <img src="img/menus/cart/1.png" alt="image" />
-                                    </div>
-
-                                    <div className="col">
-                                      <div className="text-dark-1 lh-15">The Ultimate Drawing Course Beginner to Advanced...</div>
-
-                                      <div className="d-flex items-center mt-10">
-                                        <div className="lh-12 fw-500 line-through text-light-1 mr-10">$179</div>
-                                        <div className="text-18 lh-12 fw-500 text-dark-1">$79</div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div className="col-auto">
-                                  <button><img src="img/menus/close.svg" alt="icon" /></button>
-                                </div>
-                              </div>
-
-                              <div className="row justify-between x-gap-40 pb-20">
-                                <div className="col">
-                                  <div className="row x-gap-10 y-gap-10">
-                                    <div className="col-auto">
-                                      <img src="img/menus/cart/2.png" alt="image" />
-                                    </div>
-
-                                    <div className="col">
-                                      <div className="text-dark-1 lh-15">User Experience Design Essentials - Adobe XD UI UX...</div>
-
-                                      <div className="d-flex items-center mt-10">
-                                        <div className="lh-12 fw-500 line-through text-light-1 mr-10">$179</div>
-                                        <div className="text-18 lh-12 fw-500 text-dark-1">$79</div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div className="col-auto">
-                                  <button><img src="img/menus/close.svg" alt="icon" /></button>
-                                </div>
-                              </div>
-
-                            </div>
-
-                            <div className="px-30 pt-20 pb-30 border-top-light">
-                              <div className="d-flex justify-between">
-                                <div className="text-18 lh-12 text-dark-1 fw-500">Total:</div>
-                                <div className="text-18 lh-12 text-dark-1 fw-500">$659</div>
-                              </div>
-
-                              <div className="row x-gap-20 y-gap-10 pt-30">
-                                <div className="col-sm-6">
-                                  <button className="button py-20 -dark-1 text-white -dark-button-white col-12">View Cart</button>
-                                </div>
-                                <div className="col-sm-6">
-                                  <button className="button py-20 -purple-1 text-white col-12">Checkout</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-
-                      <div className="relative">
-                        <a href="#" className="d-flex items-center text-light-1 justify-center size-50 rounded-16 -hover-dshb-header-light" data-el-toggle=".js-msg-toggle">
-                          <i className="text-24 icon icon-email"></i>
-                        </a>
                       </div>
 
                       <div className="relative">
