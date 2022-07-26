@@ -32,12 +32,11 @@ function HomeOption() {
                     </div>
                   </div>
                   <div className="text-18 lh-18 text-dark-1 fw-500 mt-30">
-                    “Teaching on Education platform has been an amazing
-                    experience”
+                    “Teaching on Education platform has been an amazing experience”
                   </div>
                   <div className="mt-30">
                     <div className="text-15 lh-12 text-dark-1 fw-500">
-                      Ali Tufan
+                      Rosé
                     </div>
                     <div className="text-14 lh-12 mt-5">
                       Designer, Apple Inc
@@ -52,10 +51,6 @@ function HomeOption() {
               <span className="text-purple-1">Courses</span> taught by industry
               leaders around the world
             </h3>
-            <p className="mt-25">
-              Use the list below to bring attention to your product’s key
-              <br className="lg:d-none" /> differentiator.
-            </p>
             <div className="d-flex x-gap-15 y-gap-15 flex-wrap pt-30">
               <div className="button -md -dark-1 text-white">
                 <Links name="Our teachers" link="/Teacher" />

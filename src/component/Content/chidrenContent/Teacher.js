@@ -32,15 +32,12 @@ function Teacher() {
 							<div className="sectionTitle ">
 								<h2 className="sectionTitle__title text-white">Ours teacher</h2>
 								<p className="sectionTitle__text text-white">
-									Lorem ipsum dolor sit amet, consectetur.
+								Our teacher told us that if we don’t look after the environment, our grandchildren may not even be able to carry on living.
 								</p>
 							</div>
 						</div>
 					</div>
-					<div
-						data-anim-wrap=""
-						className="row y-gap-30 justify-between pt-60 lg:pt-50 animated"
-					>
+					<div data-anim-wrap="" className="row y-gap-30 justify-between pt-60 lg:pt-50 animated">
 						{listTeacher.map((teacher, index) => (
 							<div
 								key={index}
