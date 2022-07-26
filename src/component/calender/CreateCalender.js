@@ -9,6 +9,8 @@ function CreateCalender() {
 			link: "",
 			class_size: "",
 			image: "",
+			end_time: "",
+			start_time: "",
 			error_list: [],
 		});
 
@@ -21,20 +23,20 @@ function CreateCalender() {
 	};
 
 	function handleAddEvent() {
-		// console.log(newEvent);
+
 		
-		// axios
-		// 	.post("http://127.0.0.1:8000/api/lessons", {
-		// 		title: newEvent.title,
-		// 		start_time: newEvent.start_time,
-		// 		end_time: newEvent.end_time,
-		// 	})
-		// 	.then(function (response) {
-		// 		console.log(response);
-		// 	})
-		// 	.catch(function (error) {
-		// 		console.log(error);
-		// 	});
+		axios
+			.post("http://127.0.0.1:8000/api/lessons", {
+				title: bookingInput.title,
+				start_time: bookingInput.start_time,
+				end_time: bookingInput.end_time,
+			})
+			.then(function (response) {
+				console.log(response);
+			})
+			.catch(function (error) {
+				console.log(error);
+		});
 	}
 
 	return (
@@ -102,6 +104,34 @@ function CreateCalender() {
 
 									<div className="col-md-6">
 										<label className="text-16 lh-1 fw-500 text-dark-1 mb-10">
+											Time Start<span>*</span>
+										</label>
+
+										<input
+											type="datetime-local"
+											placeholder="start day"
+											name="datestart"
+											value={bookingInput.datestart}
+											onChange={handChangeInput}
+										/>
+									</div>
+
+									<div className="col-md-6">
+										<label className="text-16 lh-1 fw-500 text-dark-1 mb-10">
+											End<span>*</span>
+										</label>
+
+										<input
+											type="datetime-local"
+											placeholder="End day"
+											name="dateend"
+											value={bookingInput.dateend}
+											onChange={handChangeInput}
+										/>
+									</div>
+
+									<div className="col-md-6">
+										<label className="text-16 lh-1 fw-500 text-dark-1 mb-10">
 											Class size<span>*</span>
 										</label>
 
@@ -134,7 +164,7 @@ function CreateCalender() {
 										</label>
 
 										<input
-                                            name="image"
+											name="image"
 											type="text"
 											placeholder="Import"
 											value={bookingInput.image}
@@ -143,37 +173,29 @@ function CreateCalender() {
 									</div>
 								</form>
 
-                                    <div className="col-md-6">
-
-                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">Time Start<span>*</span></label>
-
-                                        <input type="datetime-local" placeholder="start day" name="start"  />
-
-                                    </div>
-
-                                    <div className="col-md-6">
-
-                                        <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">End<span>*</span></label>
-
-                                        <input type="datetime-local" placeholder="End day" name="end"  />
-
-                                    </div>
-
-
-                                   
-
-									<div className="col-auto">
-										<button className="button -md -purple-1 text-white" type="submit">
-											Create
-										</button>
-									</div>
+								<div className="col-auto">
+									<button
+										className="button -md -purple-1 text-white"
+										type="submit"
+									>
+										Create
+									</button>
 								</div>
 							</div>
+						</div>
+						<div>
+							<h1>{bookingInput.title}</h1>
+							<h1>{bookingInput.description}</h1>
+							<h1>{bookingInput.link}</h1>
+							<h1>{bookingInput.datestart}</h1>
+							<h1>{bookingInput.dateend}</h1>
+							<h1>{bookingInput.class_size}</h1>
+							<h1>{bookingInput.image}</h1>
 						</div>
 					</div>
 				</div>
 			</div>
-		 
+		</div>
 	);
 }
 
