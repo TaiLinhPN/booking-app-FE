@@ -16,17 +16,15 @@ function Banner() {
               <div className="col-xl-6 col-lg-6 col-sm-10">
                 <div className="masthead__content">
                   <h1 data-anim-child="slide-up" className="masthead__title">
-                    Learn New Skills Online with Top{" "}
-                    <span className="text-green-1 underline">Educators</span>
+                    Learn New Skills Online with Freesource{" "}
+                    <span className="text-green-1 underline">On Top</span>
                   </h1>
                   <p
                     data-anim-child="slide-up delay-1"
                     className="masthead__text"
                   >
-                    Build skills with courses, certificates, and degrees online
-                    from
-                    <br />
-                    world-class universities and companies.
+                    Build skills with courses, and degrees online and offline
+                  
                   </p>
                   <div
                     data-anim-child="slide-up delay-2"
@@ -47,7 +45,7 @@ function Banner() {
                         href="courses-list-1.html"
                         className="button -md -outline-green-1 text-green-1"
                       >
-                        Find Courses
+                        Find Class
                       </a>
                     </div>
                   </div>
@@ -60,7 +58,7 @@ function Banner() {
                         <img src="img/masthead/icons/1.svg" alt="icon" />
                       </div>
                       <div className="masthead-info__title lh-1">
-                        Over 12 million students
+                        Over 100 students
                       </div>
                     </div>
                     <div className="masthead-info__item d-flex items-center text-white">
@@ -68,7 +66,7 @@ function Banner() {
                         <img src="img/masthead/icons/2.svg" alt="icon" />
                       </div>
                       <div className="masthead-info__title lh-1">
-                        More than 60,000 courses
+                        More than 16 class
                       </div>
                     </div>
                     <div className="masthead-info__item d-flex items-center text-white">
@@ -76,7 +74,7 @@ function Banner() {
                         <img src="img/masthead/icons/3.svg" alt="icon" />
                       </div>
                       <div className="masthead-info__title lh-1">
-                        Learn anything online
+                        Learn anything online and offline
                       </div>
                     </div>
                   </div>
@@ -116,35 +114,7 @@ function Banner() {
                       src="img/masthead/2.png"
                       alt="image"
                     />
-                    <div
-                      data-move={60}
-                      className="lg:d-none img-el -w-260 px-20 py-20 d-flex items-center bg-white rounded-8 js-mouse-move"
-                    >
-                      <img src="img/masthead/4.png" alt="icon" />
-                      <div className="ml-20">
-                        <div className="text-dark-1 text-16 fw-500 lh-1">
-                          Ali Tufan
-                        </div>
-                        <div className="mt-3">UX/UI Designer</div>
-                        <div className="d-flex x-gap-5 mt-3">
-                          <div>
-                            <div className="icon-star text-yellow-1 text-11" />
-                          </div>
-                          <div>
-                            <div className="icon-star text-yellow-1 text-11" />
-                          </div>
-                          <div>
-                            <div className="icon-star text-yellow-1 text-11" />
-                          </div>
-                          <div>
-                            <div className="icon-star text-yellow-1 text-11" />
-                          </div>
-                          <div>
-                            <div className="icon-star text-yellow-1 text-11" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    
                   </div>
                   <div className="masthead-image__el3">
                     <img
@@ -221,8 +191,7 @@ function Banner() {
                       Learn anything
                     </h5>
                     <p className="coursesCard__text text-14 mt-10">
-                      The latest design trends meet hand-crafted templates in
-                      Sassio Collection.
+                      
                     </p>
                   </div>
                 </div>
@@ -237,8 +206,7 @@ function Banner() {
                       Learn together
                     </h5>
                     <p className="coursesCard__text text-14 mt-10">
-                      The latest design trends meet hand-crafted templates in
-                      Sassio Collection.
+                      
                     </p>
                   </div>
                 </div>
@@ -253,8 +221,7 @@ function Banner() {
                       Learn with experts
                     </h5>
                     <p className="coursesCard__text text-14 mt-10">
-                      The latest design trends meet hand-crafted templates in
-                      Sassio Collection.
+                      
                     </p>
                   </div>
                 </div>
@@ -269,8 +236,7 @@ function Banner() {
                       Life Time Access
                     </h5>
                     <p className="coursesCard__text text-14 mt-10">
-                      The latest design trends meet hand-crafted templates in
-                      Sassio Collection.
+                     
                     </p>
                   </div>
                 </div>
