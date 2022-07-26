@@ -1,9 +1,9 @@
 import React,{ Component} from 'react';
-import Menu from '../Menu/Menu';
+// import Menu from '../Menu/Menu';
 import MenuSetting from '../Setting/MenuSetting/MenuSetting';
-import ForgetPassword from '../ForgetPassword/ForgetPassword';
+// import ForgetPassword from '../ForgetPassword/ForgetPassword';
 import {Route , Switch , BrowserRouter }from 'react-router-dom';
-import routes_3 from '../../Routes/routes_3';
+import routes_3 from '../../../Routes/routes_3';
 export default class Setting extends Component {
     render(){ return(
      

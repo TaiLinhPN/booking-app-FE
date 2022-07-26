@@ -1,6 +1,6 @@
 import React from 'react';
-import CurrentProfile from '../Profile/Account/CurrentProfile';
-import ForgetPassword from '../Profile/ForgetPassword/ForgetPassword';
+import CurrentProfile from '../component/Profile/Account/CurrentProfile';
+import ForgetPassword from '../component/Profile/ForgetPassword/ForgetPassword';
 const routes_3 = [{
 
         path: '/CurrentProfile',
