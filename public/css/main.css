@@ -7420,6 +7420,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 90px;
   padding-top: 90px;
   padding-bottom: 175px;
+  z-index: -100;
 }
 
 @media (max-width: 991px) {
@@ -10588,7 +10589,7 @@ div[data-slider] > input[type=range]::-ms-tooltip {
 
 .contact-form-to-top {
   position: relative;
-  z-index: 5;
+  z-index: 99;
   margin-top: -360px;
 }
 
