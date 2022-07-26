@@ -1,18 +1,17 @@
 import React from "react";
 import { useState } from "react";
-import "axios";
+import axios from "axios";
 function CreateCalender() {
-
-    const [bookingInput, setBookingInput] = useState({
-			title: "",
-			description: "",
-			link: "",
-			class_size: "",
-			image: "",
-			end_time: "",
-			start_time: "",
-			error_list: [],
-		});
+	const [bookingInput, setBookingInput] = useState({
+		title: "",
+		description: "",
+		link: "",
+		class_size: "",
+		image: "",
+		end_time: "",
+		start_time: "",
+		error_list: [],
+	});
 
 	const handChangeInput = (e) => {
 		const { name, value } = e.target;
@@ -23,20 +22,23 @@ function CreateCalender() {
 	};
 
 	function handleAddEvent() {
+		const bodyFormData = {
+			title: bookingInput.title,
+			online_link: bookingInput.link,
+			start_time: bookingInput.start_time,
+			end_time: bookingInput.end_time,
+			image_link: bookingInput.image,
+			class_size: bookingInput.class_size,
+		};
 
-		
 		axios
-			.post("http://127.0.0.1:8000/api/lessons", {
-				title: bookingInput.title,
-				start_time: bookingInput.start_time,
-				end_time: bookingInput.end_time,
-			})
+			.post("http://127.0.0.1:8000/api/lessons", bodyFormData)
 			.then(function (response) {
 				console.log(response);
 			})
 			.catch(function (error) {
 				console.log(error);
-		});
+			});
 	}
 
 	return (
