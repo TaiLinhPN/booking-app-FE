@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Menu from '../Menu/Menu';
-export default class Course extends Component {
-  render() {
+export default function Course() {
     return (
       <div>
         <div className="dashboard__main">
@@ -246,4 +245,3 @@ export default class Course extends Component {
       </div>
     )
   }
-}

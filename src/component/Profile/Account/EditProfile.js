@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-export default class EditProfile extends Component {
-  render() {
+export default function EditProfile() {
     return (
 
       <div className="dashboard__main">
@@ -76,4 +75,3 @@ export default class EditProfile extends Component {
       </div>
     )
   }
-}
