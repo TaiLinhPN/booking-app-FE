@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import Header from './Header';
 import Course from '../Course/Course';
-import { Link } from 'react-router-dom';
+import { Link,NavLink } from 'react-router-dom';
 export default class Menu extends Component {
   render() {
     return (
@@ -12,8 +12,8 @@ export default class Menu extends Component {
               <div className="dashboard__sidebar scroll-bar-1">
                 <div className="sidebar -dashboard">
                   <div className="sidebar__item ">
-                    <Link to={'/CurrentProfile'} href="#" className="d-flex items-center text-17 lh-1 fw-500">                  <i className="text-20 icon-discovery mr-15" />
-                      Profile </Link>
+                    <NavLink exact activeClassName='is-active' to={'/CurrentProfile'} href="#" className="d-flex items-center text-17 lh-1 fw-500">                  <i className="text-20 icon-discovery mr-15" />
+                      Profile </NavLink>
 
                   </div>
                   <div className="sidebar__item ">

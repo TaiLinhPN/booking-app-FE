@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 // import Header from './Header';
 import Menu from './Menu/Menu';
-
+import CurrentProfile from './Account/CurrentProfile';
 import Course from './Course/Course';
 import routes_2 from '../../Routes/routes_2';
-import {Route , Switch , BrowserRouter }from 'react-router-dom';
+// import { Match } from 'react-router';
+import {Route,Nav,NavLink , Switch ,Match, BrowserRouter, Router }from 'react-router-dom';
 import Header from '../Header/Header';
 
 
@@ -22,15 +23,17 @@ export default function Profile(){
       <Header/>
       <BrowserRouter>
       <Menu></Menu>
-    
-      <Switch>
+
+
+    <Switch>
         
         {routes_2.map((route,index)=>(
-        <Route key={index} path={route.path} component={route.main} exact={route.exact} />
+        <Route key={index} path={route.path} component={route.main}  exact={route.exact} />
+        
         )
         )}
       </Switch>
-      </BrowserRouter>
+  </BrowserRouter>
       
     </>
 
