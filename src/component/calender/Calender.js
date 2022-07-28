@@ -28,7 +28,7 @@ function Calender() {
       <div class="barba-container" data-barba="container">
         <main class="main-content">
 
-          <HeaderCalender />
+          {/* <HeaderCalender />
 
           <div class="content-wrapper js-content-wrapper">
             <div class="dashboard -home-9 js-dashboard-home-9">
@@ -37,7 +37,7 @@ function Calender() {
               {!state && < CreateCalender />}
               
             </div>
-          </div>
+          </div> */}
           
         </main>
         <FooterCalender />
