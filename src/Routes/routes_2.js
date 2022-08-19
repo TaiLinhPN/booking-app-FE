@@ -49,4 +49,4 @@ const routes_2 =[
 
 
 ]
-export d
+export default routes_2

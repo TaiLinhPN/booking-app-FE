@@ -39,11 +39,14 @@ const SignUp = () => {
 					console.log("thành công");
 				} else {
 					console.log("khoong thanh  công");
+					
 
 					setRegister({
 						...regiserInput,
 						error_list: res.data.validation_errors,
 					});
+					alert("không thành công!");
+					return
 				}
 			})
 			.catch((error) => console.log(error));
@@ -201,7 +204,10 @@ const SignUp = () => {
 													value={regiserInput.confirm}
 													onChange={handleInput}
 												/>
-												<span>{}</span>
+												<span>
+													{regiserInput.error_list !== null &&
+														regiserInput.error_list.confirm_password}
+												</span>
 											</div>
 											<div className="col-12">
 												<button

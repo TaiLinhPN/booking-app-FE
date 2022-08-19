@@ -32,6 +32,7 @@ const Login = () => {
 		axios.post(`http://127.0.0.1:8000/api/login`, bodyFormData).then((res) => {
 			if (res.data.status === 200) {
                 localStorage.setItem("user", JSON.stringify(res.data.username));
+                localStorage.setItem("option", JSON.stringify(res.data.option));
 				setUser(res.data.username);
                 window.location.assign("/");
 			} else {
@@ -45,7 +46,6 @@ const Login = () => {
 				}
 			}
 		});
-        
 	};
 
 	return (
